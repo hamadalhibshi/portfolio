@@ -1,13 +1,11 @@
-import React from "react";
-
 import { Typography } from "@mui/material";
 
 const NotFound = () => {
     return (
         <div>
-            <Typography color="orange">sad</Typography>
+            <Typography color="orange">Not Found</Typography>
         </div>
     )
 }
 
-export default NotFound
+export default NotFound;

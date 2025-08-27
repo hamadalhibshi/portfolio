@@ -1,13 +1,9 @@
-import React from "react";
-
-import { Typography } from "@mui/material";
-
 const Home = () => {
     return (
-        <div>
-            <Typography color="orange">Home</Typography>
-        </div>
+        <>
+            <h1>Home</h1>
+        </>
     )
 }
 
-export default Home
+export default Home;

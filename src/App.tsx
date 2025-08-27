@@ -1,12 +1,11 @@
-import './App.css'
-
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home, NotFound } from './pages';
+import { NavigationBar } from "./components";
 
 const App = () => {
-
   return (
     <>
+      <NavigationBar />
       <BrowserRouter>
         <Routes>
           <Route index element={<Home />} />
@@ -17,4 +16,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;
