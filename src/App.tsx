@@ -6,8 +6,8 @@ import './index.css'
 const App = () => {
   return (
     <>
-      <NavigationBar />
       <BrowserRouter>
+      <NavigationBar />
         <Routes>
           <Route index element={<Home />} />
           <Route path='*' element={<NotFound />} />
