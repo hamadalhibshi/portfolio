@@ -1,5 +1,6 @@
 export interface ButtonProps {
-    href: string;
+    href?: string;
     className?: string;
     children?: any;
+    onClick?: () => void;
 }

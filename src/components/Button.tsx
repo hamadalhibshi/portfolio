@@ -1,14 +1,14 @@
 import type { ButtonProps } from "../types"
 
-const Button = ({href, className, children}: ButtonProps) => {
+const Button = ({href, className, children, onClick}: ButtonProps) => {
     const classes = `${className 
         ? '' 
-        : 'button relative infline-flex items-center justify-center h-11 transition-colors hover:text-color-1'}`
-    const spanClasses = `relative z-10`
+        : 'px-8 py-5 rounded-2xl bg-blue-600 text-white hover:bg-blue-700'}`
+    const spanClasses = `relative z-10 uppercase`
 
     const renderButton = () => {
         return (
-            <button className={classes}>
+            <button className={classes} onClick={onClick}>
                 <span className={spanClasses}>{children}</span>
             </button>
         )

@@ -6,7 +6,7 @@ const NavigationBar = () => {
 
   return (
     <div className="fixed top-0 w-full border-b border-b-gray-500 p-5">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between ml-5 mr-5">
         <div className="text-2xl uppercase">
           <a href="/">
             Hamad Alhibshi
@@ -19,11 +19,11 @@ const NavigationBar = () => {
               <a
               key={nav.id}
               href={nav.url}
-              className={`text-2xl uppercase transition-colors 
-                ${path.pathname === nav.url ? 
+              className={`text-1xl uppercase hover:text-amber-200 ml-10
+                  ${path.pathname === nav.url ? 
                   'text-amber-400': 
                   'text-neutral-100'}  
-                  hover:text-amber-200 ml-5`}
+                `}
               >
                 {nav.title}
               </a>
