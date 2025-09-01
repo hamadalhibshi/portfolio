@@ -5,7 +5,7 @@ const NavigationBar = () => {
   const path = useLocation();
 
   return (
-    <div className="fixed top-0 w-full border-b border-b-gray-500 p-5">
+    <div className="fixed top-0 w-full border-b border-b-gray-500 p-5 bg-black">
       <div className="flex items-center justify-between ml-5 mr-5">
         <div className="text-2xl uppercase">
           <a href="/">
