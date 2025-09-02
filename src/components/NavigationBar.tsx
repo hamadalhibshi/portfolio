@@ -13,7 +13,7 @@ const openLinkedinUrl = () => {
 };
 
   return (
-    <div className="fixed top-0 w-full p-5 bg-black">
+    <div className="top-0 w-full p-5 pt-10">
       <div className="flex items-center justify-between ml-5 mr-5">
         <div className="text-2xl uppercase">
           <a href="/">
@@ -34,7 +34,6 @@ const openLinkedinUrl = () => {
               </div>
           </button>
         </div>
-
       </div>
     </div>
   )
