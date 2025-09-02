@@ -1,11 +1,19 @@
-import { useLocation } from "react-router-dom"
-import { navigation } from "../constants"
+import { TiSocialLinkedin } from "react-icons/ti";
+import { LuGithub } from "react-icons/lu";
 
 const NavigationBar = () => {
-  const path = useLocation();
+  const iconClass = 'flex rounded-lg w-12 h-12 items-center justify-center cursor-pointer hover:bg-blue-700';
+
+  const openGithubUrl = () => {
+    window.open('https://github.com/hamadalhibshi', '_blank');
+};
+
+const openLinkedinUrl = () => {
+    window.open('https://www.linkedin.com/in/halhibshi/', '_blank');
+};
 
   return (
-    <div className="fixed top-0 w-full border-b border-b-gray-500 p-5 bg-black">
+    <div className="fixed top-0 w-full p-5 bg-black">
       <div className="flex items-center justify-between ml-5 mr-5">
         <div className="text-2xl uppercase">
           <a href="/">
@@ -13,23 +21,20 @@ const NavigationBar = () => {
           </a>
         </div>
 
-        <nav className="hidden lg:flex">
-          <div className="flex justify-center">
-            {navigation.map((nav)=> (
-              <a
-              key={nav.id}
-              href={nav.url}
-              className={`text-1xl uppercase hover:text-amber-200 ml-10
-                  ${path.pathname === nav.url ? 
-                  'text-amber-400': 
-                  'text-neutral-100'}  
-                `}
-              >
-                {nav.title}
-              </a>
-            ))}
-          </div>
-        </nav>
+        <div>
+          <button onClick={openGithubUrl}>
+              <div className={iconClass}>
+                  <LuGithub size={30} />
+              </div>
+          </button>
+
+          <button onClick={openLinkedinUrl}>
+              <div className={iconClass}>
+                  <TiSocialLinkedin size={30} />
+              </div>
+          </button>
+        </div>
+
       </div>
     </div>
   )

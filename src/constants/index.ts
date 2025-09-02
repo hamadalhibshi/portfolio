@@ -21,6 +21,6 @@ export const homeText = {
         name: 'Hamad Alhibshi',
         role: 'Full-Stack Developer',
         about: 'Full-stack developer with a passion for building innovative and user-friendly applications. Strong work ethic with hands-on experience across front-end, back-end, and mobile development. Skilled at delivering creative, effective solutions to complex challenges while exceeding client expectations and enhancing user experiences.',
-        donwloadResume:'Download Resume',
+        downloadResume:'Download Resume',
         contact: 'Contact Me',
     };
