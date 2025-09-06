@@ -1,21 +1,3 @@
-export const navigation = [
-    {
-        id: '0',
-        title: 'About',
-        url: '/about',
-    },
-    {
-        id: '1',
-        title: 'Projects',
-        url: '/projects',
-    },
-    {
-        id: '2',
-        title: 'Contact',
-        url: '/contact',
-    },
-];
-
 export const homeText = {
         introduction: "Hello, I'm",
         name: 'Hamad Alhibshi',
@@ -27,7 +9,7 @@ export const homeText = {
 
 export const experiences = [
     {
-        id: '0',
+        id: '3',
         date:'Feb 2025 - May 2025',
         role:'Full Stack Developer',
         description:'asddasdd asddasdd asddasddasddasdd asddasddasddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd ',
@@ -35,7 +17,7 @@ export const experiences = [
         tech:['React', 'SQL', 'Postgres'],
     },
     {
-        id: '1',
+        id: '2',
         date:'May 2024 - Feb 2025',
         role:'Frontend Developer',
         description:'asddasdd asddasdd asddasddasddasdd asddasddasddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd ',
@@ -43,7 +25,7 @@ export const experiences = [
         tech:['React', 'React Native', 'XCode', 'Android Studio'],
     },
     {
-        id: '2',
+        id: '1',
         date:'Nov 2023 - May 2024',
         role:'Mobile Developer Trainee',
         description:'asddasdd asddasdd asddasddasddasdd asddasddasddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd ',
@@ -51,7 +33,7 @@ export const experiences = [
         tech:['React Native', 'XCode', 'Android Studio'],
     },
     {
-        id: '3',
+        id: '0',
         date:'June 2023 - Sept 2023',
         role:'Software Engineer Bootcamp',
         description:'asddasdd asddasdd asddasddasddasdd asddasddasddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd ',
@@ -62,28 +44,35 @@ export const experiences = [
 
 export const projects = [
     {
-        id: '0',
+        id: '4',
+        title: 'Portfolio',
+        description:'Personal Portfolio showcasing skills, projects, and experience.',
+        tech: ['React', 'Vite', 'TailwindCSS', 'Typescript'],
+        img:'src/assets/spaceThreads.png',
+    },
+    {
+        id: '3',
         title: 'spaceThreads',
         description:'A platform that serves as a collaborative storytelling platform. Users can visit various pages where authors have the creative freedom to craft their own stories. What sets SpaceThreads apart is its unique feature that allows authors to seamlessly merge their stories with those of others.',
         tech: ['Django', 'Python', 'Axios', 'JSON Web Token (jwt)',  'PostGresQL', 'React', 'Material UI', 'Postman', 'pgAdmin4'],
         img:'src/assets/spaceThreads.png',
     },
     {
-        id: '1',
+        id: '2',
         title: 'yallaAthletes',
         description:"This platform breaks down the barriers that often limit people's access to sports, making it possible for individuals from all walks of life to embrace their inner athlete and embark on a journey of physical excellence.",
         tech: ['Node.js', 'Express', 'MongoDB', 'Mongoose', 'bcrypt', 'React', 'Material UI'],
         img:'src/assets/yallaAthletes.png',
     },
     {
-        id: '2',
+        id: '1',
         title: 'oceanThreads',
         description:'A space where students from General Assembly Middle East could connect, share their issues, ideas, or even showcase their projects. This setup allows others within the General Assembly Middle East community to jump in, leave comments, offer solutions, or simply spread some positivity.',
         tech: ['React', 'Material UI', 'Node.js', 'Express', 'MongoDB', 'Mongoose', 'HTML', 'Bootstrap', 'jQuery'],
         img:'src/assets/oceanThreads.png',
     },
     {
-        id: '3',
+        id: '0',
         title: 'Jeopardy',
         description:'Two-player Jeopardy game, pits two players against each other in a battle of knowledge.',
         tech: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Git', 'GitHub'],
