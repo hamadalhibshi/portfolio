@@ -59,3 +59,34 @@ export const experiences = [
         tech:['React', 'Nodejs', 'mongoDB', 'Postgres'],
     },
 ];
+
+export const projects = [
+    {
+        id: '0',
+        title: 'spaceThreads',
+        description:'A platform that serves as a collaborative storytelling platform. Users can visit various pages where authors have the creative freedom to craft their own stories. What sets SpaceThreads apart is its unique feature that allows authors to seamlessly merge their stories with those of others.',
+        tech: ['Django', 'Python', 'Axios', 'JSON Web Token (jwt)',  'PostGresQL', 'React', 'Material UI', 'Postman', 'pgAdmin4'],
+        img:'src/assets/spaceThreads.png',
+    },
+    {
+        id: '1',
+        title: 'yallaAthletes',
+        description:"This platform breaks down the barriers that often limit people's access to sports, making it possible for individuals from all walks of life to embrace their inner athlete and embark on a journey of physical excellence.",
+        tech: ['Node.js', 'Express', 'MongoDB', 'Mongoose', 'bcrypt', 'React', 'Material UI'],
+        img:'src/assets/yallaAthletes.png',
+    },
+    {
+        id: '2',
+        title: 'oceanThreads',
+        description:'A space where students from General Assembly Middle East could connect, share their issues, ideas, or even showcase their projects. This setup allows others within the General Assembly Middle East community to jump in, leave comments, offer solutions, or simply spread some positivity.',
+        tech: ['React', 'Material UI', 'Node.js', 'Express', 'MongoDB', 'Mongoose', 'HTML', 'Bootstrap', 'jQuery'],
+        img:'src/assets/oceanThreads.png',
+    },
+    {
+        id: '3',
+        title: 'Jeopardy',
+        description:'Two-player Jeopardy game, pits two players against each other in a battle of knowledge.',
+        tech: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Git', 'GitHub'],
+        img:'src/assets/jeopardy.png',
+    },
+]

@@ -1,5 +1,5 @@
 import { homeText } from "../../constants";
-import { Experience, Technologies } from "./components";
+import { Experience, Projects, Technologies } from "./components";
 
 const Home = () => {
     return (
@@ -18,8 +18,9 @@ const Home = () => {
                     <img src="" className="w-130 h-130 rounded-full bg-amber-300" />
                 </div>
             </div>
+        {/* <Technologies /> */}
         <Experience />
-        <Technologies />
+        <Projects />
         </div>
     )
 }

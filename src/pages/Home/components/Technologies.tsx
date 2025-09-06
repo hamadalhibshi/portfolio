@@ -5,7 +5,7 @@ const Technologies = () => {
 
   return (
     <div className="border-b border-neutral-800 pb-24">
-      <h1 className="text-3xl text-center">Technologies</h1>
+      <h1 className="my-20 text-3xl text-center">Technologies</h1>
 
       <div className="flex justify-center mt-10">
         <div className={iconClass}>
