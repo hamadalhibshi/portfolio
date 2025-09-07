@@ -47,14 +47,14 @@ export const projects = [
         id: '4',
         title: 'Portfolio',
         description:'Personal Portfolio showcasing skills, projects, and experience.',
-        tech: ['React', 'Vite', 'TailwindCSS', 'Typescript'],
+        tech: ['React', 'Vite', 'TailwindCSS', 'Typescript', 'GSAP', 'Javascript'],
         img:'src/assets/spaceThreads.png',
     },
     {
         id: '3',
         title: 'spaceThreads',
         description:'A platform that serves as a collaborative storytelling platform. Users can visit various pages where authors have the creative freedom to craft their own stories. What sets SpaceThreads apart is its unique feature that allows authors to seamlessly merge their stories with those of others.',
-        tech: ['Django', 'Python', 'Axios', 'JSON Web Token (jwt)',  'PostGresQL', 'React', 'Material UI', 'Postman', 'pgAdmin4'],
+        tech: ['Django', 'Python', 'JWT', 'PostGresQL', 'React', 'Material UI', 'pgAdmin4'],
         img:'src/assets/spaceThreads.png',
     },
     {
@@ -68,7 +68,7 @@ export const projects = [
         id: '1',
         title: 'oceanThreads',
         description:'A space where students from General Assembly Middle East could connect, share their issues, ideas, or even showcase their projects. This setup allows others within the General Assembly Middle East community to jump in, leave comments, offer solutions, or simply spread some positivity.',
-        tech: ['React', 'Material UI', 'Node.js', 'Express', 'MongoDB', 'Mongoose', 'HTML', 'Bootstrap', 'jQuery'],
+        tech: ['React', 'Material UI', 'Node.js', 'Express', 'MongoDB', 'jQuery'],
         img:'src/assets/oceanThreads.png',
     },
     {
@@ -85,3 +85,10 @@ export const footer = {
     description: "I'm open for new opportunities - especially ambitious or large projects. However, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
     buttonText: 'Say Hello',
 }
+
+export const scrambleTextRoles = [
+    "Full-Stack Engineer",
+    "Frontend Developer",
+    "Mobile Developer",
+    "I build things."
+]
