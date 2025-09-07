@@ -1,4 +1,4 @@
-import { footer } from "../constants"
+import { footer } from "../constants";
 
 const Footer = () => {
   return (
@@ -10,11 +10,11 @@ const Footer = () => {
       </div>
       <div className="flex py-10 justify-center">
         <button className="py-5 px-10 border-purple-800 border-2 rounded-md text-center hover:bg-purple-800">
-            <span className="font-semibold text-sm">{footer.buttonText}</span>
+          <span className="font-semibold text-sm">{footer.buttonText}</span>
         </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
