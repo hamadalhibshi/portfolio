@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { projects } from "../../../constants";
+import { projects, titles } from "../../../constants";
 import { gsap } from "gsap";
 
 const Projects = () => {
@@ -178,7 +178,7 @@ const Projects = () => {
   return (
     <div className="border-b border-neutral-800 pb-24">
       <h1 id="title" className="my-20 text-4xl text-center">
-        Projects
+        {titles.projects}
       </h1>
       {renderView(projects)}
     </div>

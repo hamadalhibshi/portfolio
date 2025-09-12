@@ -76,23 +76,6 @@ const Home = () => {
         ease: "power3.out",
       }
     );
-    gsap.fromTo(
-      "#wheel-icon",
-      { opacity: 0, rotation: 0, y: 500 },
-      {
-        opacity: 1,
-        y: 0,
-        rotation: 1440,
-        ease: "none",
-        scrollTrigger: {
-          trigger: "#wheel-icon",
-          start: "top 80%",
-          end: "+=1200",
-          scrub: true,
-          // markers: true
-        },
-      }
-    );
   }, []);
 
   return (
@@ -108,13 +91,13 @@ const Home = () => {
           </h1>
           <h1
             id="actual-role-text"
-            className="bg-gradient-to-r from-pink-300 to-purple-500 text-5xl mt-5 via-slate-500 text-transparent bg-clip-text"
+            className="bg-gradient-to-r from-pink-300 to-purple-500 text-5xl py-5 via-slate-500 text-transparent bg-clip-text"
           >
             {homeText.role}
           </h1>
           <p
             id="about-text"
-            className="w-3/4 mt-10 leading-relaxed text-justify text-2xl"
+            className="w-3/4 mt-5 leading-relaxed text-justify text-2xl"
           >
             {homeText.about}
           </p>
@@ -122,7 +105,6 @@ const Home = () => {
 
         <div className="justify-center items-center">
           <img src="" className="w-130 h-130 rounded-full bg-amber-300" />
-          <GiCarWheel id="wheel-icon" className="w-130 h-130" color="white" />
         </div>
       </div>
 

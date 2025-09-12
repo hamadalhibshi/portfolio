@@ -7,6 +7,11 @@ export const homeText = {
         contact: 'Contact Me',
 };
 
+export const titles = {
+    experience: 'Experience',
+    projects: 'Projects',
+};
+
 export const experiences = [
     {
         id: '3',

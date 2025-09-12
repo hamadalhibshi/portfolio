@@ -1,6 +1,7 @@
 import { useEffect } from "react";
-import { experiences } from "../../../constants";
+import { experiences, titles } from "../../../constants";
 import { gsap } from "gsap";
+import { GiCarWheel } from "react-icons/gi";
 
 const Experience = () => {
   useEffect(() => {
@@ -63,13 +64,33 @@ const Experience = () => {
         },
       }
     );
+    gsap.fromTo(
+      "#wheel-icon",
+      { opacity: 0, rotation: 0, y: 200, color: "" },
+      {
+        opacity: 1,
+        y: 0,
+        rotation: 1440,
+        ease: "none",
+        color: "",
+        scrollTrigger: {
+          trigger: "#wheel-icon",
+          start: "top 80%",
+          end: "+=1200",
+          scrub: true,
+          // markers: true
+        },
+      }
+    );
   }, []);
 
   return (
     <div className="pb-24">
       <h1 id="title-text" className="my-20 text-4xl text-center">
-        Experience
+        {titles.experience}
       </h1>
+
+      <GiCarWheel id="wheel-icon" className="absolute left-30" size={400} />
 
       {experiences.map((exp, index) => (
         <div key={index} className="flex mb-8 flex-wrap justify-center">
