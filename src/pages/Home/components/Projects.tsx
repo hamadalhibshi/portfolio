@@ -136,7 +136,7 @@ const Projects = () => {
                 </h6>
                 <div
                   id="description"
-                  className="w-full h-50 bg-gray-600 p-5 rounded-sm relative z-10 shadow-lg"
+                  className="w-full h-50 bg-neutral-900 p-5 rounded-sm relative z-10"
                 >
                   <p className="mb-4">{project.description}</p>
                 </div>

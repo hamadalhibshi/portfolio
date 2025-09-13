@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import { Footer, MovableObject } from "../../components";
+import { Footer } from "../../components";
 import { homeText, scrambleTextRoles } from "../../constants";
-import { Experience, Projects } from "./components";
+import { Experience, MovableObject, Projects, TechCards } from "./components";
 import { gsap } from "gsap";
 import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -79,24 +79,24 @@ const Home = () => {
 
   return (
     <>
-      <div className="py-30 m-10 flex mb-30">
-        <div className="w-2/3 z-10">
+      <div className="py-30 m-10 mb-30">
+        <div className="lg:w-2/3">
           <p id="intro-text">{homeText.introduction}</p>
           <h1
             id="name-text"
-            className="uppercase text-5xl mt-5 font-bold text-neutral-50"
+            className="uppercase lg:text-5xl text-3xl lg:mt-5 font-bold text-neutral-50"
           >
             {homeText.name}
           </h1>
           <h1
             id="actual-role-text"
-            className="bg-gradient-to-r from-pink-300 to-purple-500 text-5xl py-5 via-slate-500 text-transparent bg-clip-text"
+            className="lg:text-5xl text-3xl bg-gradient-to-r from-pink-300 to-purple-500 lg:py-5 via-slate-500 text-transparent bg-clip-text"
           >
             {homeText.role}
           </h1>
           <p
             id="about-text"
-            className="w-3/4 mt-5 leading-relaxed text-justify text-2xl"
+            className="lg:w-3/4 mt-5 leading-relaxed text-justify text-2xl"
           >
             {homeText.about}
           </p>
@@ -106,6 +106,7 @@ const Home = () => {
       </div>
 
       <Experience />
+      {/* <TechCards /> */}
       <Projects />
       <Footer />
     </>

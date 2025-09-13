@@ -9,14 +9,14 @@ const MovableObject = () => {
       {
         opacity: 0,
       },
-      { opacity: 1, duration: 2, delay: 2 }
+      { opacity: 1, duration: 2, delay: 0.5 }
     );
   }, []);
 
   return (
     <div
       id="object"
-      className="absolute w-[400px] h-[400px] lg:w-[700px] lg:h-[700px] lg:right-0 lg:top-[4%] top-[1%]"
+      className="absolute w-[400px] h-[400px] lg:w-[700px] lg:h-[700px] lg:right-0 lg:top-[15%] top-[1%] z-[-10]"
     >
       <Spline
         className="w-full h-full"

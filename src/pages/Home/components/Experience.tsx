@@ -1,7 +1,11 @@
 import { useEffect } from "react";
 import { experiences, titles } from "../../../constants";
 import { gsap } from "gsap";
-import { GiCarWheel } from "react-icons/gi";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 
 const Experience = () => {
   useEffect(() => {
@@ -9,26 +13,6 @@ const Experience = () => {
       gsap.fromTo(
         el,
         { opacity: 0, x: -120, skewX: -10, rotationY: -30 },
-        {
-          opacity: 1,
-          x: 0,
-          skewX: 0,
-          rotationY: 0,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: el,
-            start: "top 85%",
-            end: "top 40%",
-            scrub: true,
-            // markers: true,
-          },
-        }
-      );
-    });
-    gsap.utils.toArray("#info").forEach((el: any) => {
-      gsap.fromTo(
-        el,
-        { opacity: 0, x: 120, skewX: 10, rotationY: 30 },
         {
           opacity: 1,
           x: 0,
@@ -64,24 +48,6 @@ const Experience = () => {
         },
       }
     );
-    gsap.fromTo(
-      "#wheel-icon",
-      { opacity: 0, rotation: 0, y: 200, color: "" },
-      {
-        opacity: 1,
-        y: 0,
-        rotation: 1440,
-        ease: "none",
-        color: "",
-        scrollTrigger: {
-          trigger: "#wheel-icon",
-          start: "top 80%",
-          end: "+=1200",
-          scrub: true,
-          // markers: true
-        },
-      }
-    );
   }, []);
 
   return (
@@ -90,27 +56,52 @@ const Experience = () => {
         {titles.experience}
       </h1>
 
-      <GiCarWheel id="wheel-icon" className="absolute left-30" size={400} />
+      <VerticalTimeline>
+        {experiences.map((exp, index: number) => (
+          <VerticalTimelineElement
+            key={index}
+            contentStyle={{ background: "#171717", boxShadow: "none" }}
+            contentArrowStyle={{ borderRight: "7px solid #fff" }}
+            date={exp?.date}
+            iconStyle={{ background: "#171717", color: "#fff" }}
+            icon={
+              <div className="flex justify-center items-center w-full h-full">
+                <img
+                  src={exp.logo}
+                  className="w-[60%] object-contain rounded-full"
+                />
+              </div>
+            }
+          >
+            <div className="flex mb-8 flex-wrap justify-center">
+              <div className="w-full max-w-xl">
+                <h6 className="font-semibold">{exp?.role}</h6>
+                <span className="font-semibold text-sm text-neutral-500 block">
+                  {exp?.company}
+                </span>
+                <ul className="list-disc mt-5 ml-5 space-y-2">
+                  {exp?.description?.map((desc, index) => (
+                    <li key={index} className="text-[14px]">
+                      {desc.point}
+                    </li>
+                  ))}
+                </ul>
 
-      {experiences.map((exp, index) => (
-        <div key={index} className="flex mb-8 flex-wrap justify-center">
-          <div id="dates" className="w-full lg:w-1/4">
-            <p className="mb-2 text-sm text-neutral-400">{exp.date}</p>
-          </div>
-          <div id="info" className="w-full max-w-xl lg:w-3/4">
-            <h6 className="mb-2 font-semibold">{`${exp.role} - ${exp.company}`}</h6>
-            <p className="mb-4">{exp.description}</p>
-            {exp.tech.map((tech, index) => (
-              <span
-                key={index}
-                className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800"
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
-        </div>
-      ))}
+                <div className="mt-5">
+                  {exp?.tech.map((tech, index: number) => (
+                    <span
+                      key={index}
+                      className="rounded px-2 py-1 mr-2 text-sm font-medium text-purple-800"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </VerticalTimelineElement>
+        ))}
+      </VerticalTimeline>
     </div>
   );
 };

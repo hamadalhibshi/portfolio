@@ -14,47 +14,109 @@ export const titles = {
 
 export const experiences = [
     {
-        id: '3',
-        date:'Feb 2025 - May 2025',
-        role:'Full Stack Developer',
-        description:'asddasdd asddasdd asddasddasddasdd asddasddasddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd ',
-        company:'Tam-C Solutions',
-        tech:['React', 'SQL', 'Postgres'],
-    },
-    {
-        id: '2',
-        date:'May 2024 - Feb 2025',
-        role:'Frontend Developer',
-        description:'asddasdd asddasdd asddasddasddasdd asddasddasddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd ',
-        company:'Malaeb',
-        tech:['React', 'React Native', 'XCode', 'Android Studio'],
+        id: '0',
+        date:'June 2023 - Sept 2023',
+        role:'Software Engineer Bootcamp',
+        company:'General Assembly',
+        tech:['React', 'Nodejs', 'mongoDB', 'Postgres'],
+        logo:'src/assets/generalAssembly.jpeg',
+        description:[
+            {
+                point:'Led the development of new mobile and web features, ensuring timely delivery aligned with business goals.'
+            },
+            {
+                point:'Led the development of new mobile and web features, ensuring timely delivery aligned with business goals.'
+            },
+            {
+                point:'Led the development of new mobile and web features, ensuring timely delivery aligned with business goals.'
+            },
+            {
+                point:'Led the development of new mobile and web features, ensuring timely delivery aligned with business goals.'
+            },
+        ]
     },
     {
         id: '1',
         date:'Nov 2023 - May 2024',
         role:'Mobile Developer Trainee',
-        description:'asddasdd asddasdd asddasddasddasdd asddasddasddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd ',
         company:'Malaeb',
         tech:['React Native', 'XCode', 'Android Studio'],
+        logo:'src/assets/malaeb.png',
+        description:[
+            {
+                point:'Assisted in building and testing mobile app features under the guidance of senior developers.'
+            },
+            {
+                point:'Learned and applied best practices in React Native development, debugging, and testing.'
+            },
+            {
+                point:'Worked closely with mentors to review code, improve problem-solving approaches, and adopt efficient development workflows.'
+            },
+            {
+                point:'Supported integration of APIs documented in Swagger and gained hands-on experience with deployment tools.'
+            },
+            {
+                point:'Collaborated with designers and QA to align development with product requirements.'
+            },
+        ]
     },
     {
-        id: '0',
-        date:'June 2023 - Sept 2023',
-        role:'Software Engineer Bootcamp',
-        description:'asddasdd asddasdd asddasddasddasdd asddasddasddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd asddasddasddasddasdd ',
-        company:'General Assembly',
-        tech:['React', 'Nodejs', 'mongoDB', 'Postgres'],
+        id: '2',
+        date:'May 2024 - Feb 2025',
+        role:'Frontend Developer',
+        company:'Malaeb',
+        tech:['React', 'React Native', 'XCode', 'Android Studio'],
+        logo:'src/assets/malaeb.png',
+        description:[
+            {
+                point:'Led the development of new mobile and web features, ensuring timely delivery aligned with business goals.'
+            },
+            {
+                point:'Collaborated with UI/UX, QA, and cross-functional teams to refine user flows and implement seamless user experiences.'
+            },
+            {
+                point:'Optimized performance, debugging, and monitoring through tools like Flipper and Reactotron, improving app reliability.'
+            },
+            {
+                point:'Contributed to deployment processes.'
+            },
+            {
+                point:'Actively participated in sprint planning, task management, and provided input on technical design decisions.'
+            },
+        ]
+    },
+    {
+        id: '3',
+        date:'Feb 2025 - May 2025',
+        role:'Full Stack Developer',
+        company:'Tam-C Solutions',
+        tech:['React', 'SQL', 'Postgres'],
+        logo:'src/assets/tamC.png',
+        description:[
+            {
+                point:'Led the development of new mobile and web features, ensuring timely delivery aligned with business goals.'
+            },
+            {
+                point:'Led the development of new mobile and web features, ensuring timely delivery aligned with business goals.'
+            },
+            {
+                point:'Led the development of new mobile and web features, ensuring timely delivery aligned with business goals.'
+            },
+            {
+                point:'Led the development of new mobile and web features, ensuring timely delivery aligned with business goals.'
+            },
+        ]
     },
 ];
 
 export const projects = [
-    {
-        id: '4',
-        title: 'Portfolio',
-        description:'Personal Portfolio showcasing skills, projects, and experience.',
-        tech: ['React', 'Vite', 'TailwindCSS', 'Typescript', 'GSAP', 'Javascript'],
-        img:'src/assets/spaceThreads.png',
-    },
+    // {
+    //     id: '4',
+    //     title: 'Portfolio',
+    //     description:'Personal Portfolio showcasing skills, projects, and experience.',
+    //     tech: ['React', 'Vite', 'TailwindCSS', 'Typescript', 'GSAP', 'Javascript'],
+    //     img:'src/assets/spaceThreads.png',
+    // },
     {
         id: '3',
         title: 'SpaceThreads',
@@ -66,7 +128,7 @@ export const projects = [
         id: '2',
         title: 'YallaAthletes',
         description:"This platform breaks down the barriers that often limit people's access to sports, making it possible for individuals from all walks of life to embrace their inner athlete and embark on a journey of physical excellence.",
-        tech: ['Node.js', 'Express', 'MongoDB', 'Mongoose', 'bcrypt', 'React', 'Material UI'],
+        tech: ['Node.js', 'Express', 'MongoDB', 'bcrypt', 'React', 'Material UI'],
         img:'src/assets/yallaAthletes.png',
     },
     {
@@ -96,4 +158,22 @@ export const scrambleTextRoles = [
     "Frontend Developer",
     "Mobile Developer",
     "I build things."
+]
+
+export const techCardsConst = [
+    {
+        id: '0',
+        title:'React Native Developer',
+        image:'src/assets/react.png'
+    },
+    {
+        id: '1',
+        title:'Front-End Developer',
+        image:'src/assets/react.png'
+    },
+    {
+        id: '2',
+        title:'Full-Stack Developer',
+        image:'src/assets/react.png'
+    }
 ]
