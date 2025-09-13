@@ -13,46 +13,19 @@ const Cursor = () => {
       gsap.to(outer, {
         x: clientX - 30 / 2,
         y: clientY - 30 / 2,
-        duration: 0.3,
+        duration: 0.2,
         ease: "power3.out",
       });
     };
 
-    const handleClick = () => {
-      gsap
-        .timeline()
-        .to(
-          outer,
-          {
-            scale: 0.2,
-            duration: 0.2,
-            ease: "power2.out",
-          },
-          0
-        )
-        .to(
-          inner,
-          {
-            scale: 3,
-            duration: 0.2,
-            ease: "power2.out",
-          },
-          0
-        )
-        .to(outer, {
-          scale: 1,
-          duration: 0.6,
-          ease: "power3.out",
-        })
-        .to(
-          inner,
-          {
-            scale: 1,
-            duration: 0.6,
-            ease: "power3.out",
-          },
-          "<"
-        );
+    const handleMouseDown = () => {
+      gsap.to(inner, { scale: 3, duration: 0.2, ease: "power2.out" });
+      gsap.to(outer, { scale: 0.2, duration: 0.2, ease: "power2.out" });
+    };
+
+    const handleMouseUp = () => {
+      gsap.to(inner, { scale: 1, duration: 0.6, ease: "power3.out" });
+      gsap.to(outer, { scale: 1, duration: 0.6, ease: "power3.out" });
     };
 
     const handleMouseEnter = (e: Event) => {
@@ -61,22 +34,25 @@ const Cursor = () => {
       gsap.to(outer, {
         scale: 0.7,
         backgroundColor: bgColor,
+        borderColor: bgColor,
         duration: 0.3,
-        ease: "power3.out",
       });
+      gsap.to(inner, { scale: 0.7, backgroundColor: bgColor, duration: 0.3 });
     };
 
     const handleMouseLeave = () => {
       gsap.to(outer, {
         scale: 1,
         backgroundColor: "transparent",
+        borderColor: "white",
         duration: 0.3,
-        ease: "power3.out",
       });
+      gsap.to(inner, { scale: 1, backgroundColor: "white", duration: 0.3 });
     };
 
     window.addEventListener("mousemove", handleMouseMove);
-    window.addEventListener("click", handleClick);
+    window.addEventListener("mousedown", handleMouseDown);
+    window.addEventListener("mouseup", handleMouseUp);
 
     buttons.forEach((btn) => {
       btn.addEventListener("mouseenter", handleMouseEnter);
@@ -85,7 +61,8 @@ const Cursor = () => {
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
-      window.removeEventListener("click", handleClick);
+      window.removeEventListener("mousedown", handleMouseDown);
+      window.removeEventListener("mouseup", handleMouseUp);
       buttons.forEach((btn) => {
         btn.removeEventListener("mouseenter", handleMouseEnter);
         btn.removeEventListener("mouseleave", handleMouseLeave);
