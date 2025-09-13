@@ -1,11 +1,10 @@
 import { useEffect } from "react";
-import { Footer } from "../../components";
+import { Footer, MovableObject } from "../../components";
 import { homeText, scrambleTextRoles } from "../../constants";
 import { Experience, Projects } from "./components";
 import { gsap } from "gsap";
 import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { GiCarWheel } from "react-icons/gi";
 
 const Home = () => {
   gsap.registerPlugin(ScrambleTextPlugin);
@@ -79,9 +78,9 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
-      <div className="py-30 m-10 flex pb-24">
-        <div className="w-2/3">
+    <>
+      <div className="py-30 m-10 flex mb-30">
+        <div className="w-2/3 z-10">
           <p id="intro-text">{homeText.introduction}</p>
           <h1
             id="name-text"
@@ -103,15 +102,13 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="justify-center items-center">
-          <img src="" className="w-130 h-130 rounded-full bg-amber-300" />
-        </div>
+        <MovableObject />
       </div>
 
       <Experience />
       <Projects />
       <Footer />
-    </div>
+    </>
   );
 };
 
