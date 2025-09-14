@@ -60,7 +60,7 @@ const Projects = () => {
           <Tilt key={index}>
             <button
               id="project-card"
-              className="bg-neutral-900 rounded-2xl overflow-hidden duration-300"
+              className="bg-neutral-900 rounded-2xl overflow-hidden duration-300 cursor-none"
               onClick={() => navigateToRepo(project.link)}
             >
               <div className="h-50 w-full overflow-hidden relative group">

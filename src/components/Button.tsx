@@ -38,7 +38,7 @@ const Button = ({ href, children, onClick }: ButtonProps) => {
     return (
       <button
         onClick={onClick}
-        className="relative px-8 py-5 rounded-lg overflow-hidden text-white font-semibold border border-purple-800"
+        className="relative px-8 py-5 rounded-lg overflow-hidden text-white font-semibold border border-purple-800 cursor-none"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
@@ -55,7 +55,7 @@ const Button = ({ href, children, onClick }: ButtonProps) => {
     return (
       <a
         onClick={onClick}
-        className="relative px-8 py-5 rounded-lg overflow-hidden text-white font-semibold border border-purple-800"
+        className="relative px-8 py-5 rounded-lg overflow-hidden text-white font-semibold border border-purple-800 cursor-none"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         href={href}

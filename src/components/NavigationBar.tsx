@@ -3,7 +3,7 @@ import { LuGithub } from "react-icons/lu";
 
 const NavigationBar = () => {
   const iconClass =
-    "flex rounded-lg w-12 h-12 items-center justify-center cursor-pointer hover:bg-blue-700";
+    "flex rounded-lg w-12 h-12 items-center justify-center cursor-none hover:opacity-50";
 
   const openGithubUrl = () => {
     window.open("https://github.com/hamadalhibshi", "_blank");
