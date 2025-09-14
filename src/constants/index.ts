@@ -123,6 +123,7 @@ export const projects = [
         description:'A platform that serves as a collaborative storytelling platform. Users can visit various pages where authors have the creative freedom to craft their own stories. What sets SpaceThreads apart is its unique feature that allows authors to seamlessly merge their stories with those of others.',
         tech: ['Django', 'Python', 'JWT', 'PostGresQL', 'React', 'Material UI', 'pgAdmin4'],
         img:'src/assets/spaceThreads.png',
+        link:'https://github.com/hamadalhibshi/spaceThreads'
     },
     {
         id: '2',
@@ -130,6 +131,7 @@ export const projects = [
         description:"This platform breaks down the barriers that often limit people's access to sports, making it possible for individuals from all walks of life to embrace their inner athlete and embark on a journey of physical excellence.",
         tech: ['Node.js', 'Express', 'MongoDB', 'bcrypt', 'React', 'Material UI'],
         img:'src/assets/yallaAthletes.png',
+        link:'https://github.com/hamadalhibshi/yallaAthletes'
     },
     {
         id: '1',
@@ -137,6 +139,7 @@ export const projects = [
         description:'A space where students from General Assembly Middle East could connect, share their issues, ideas, or even showcase their projects. This setup allows others within the General Assembly Middle East community to jump in, leave comments, offer solutions, or simply spread some positivity.',
         tech: ['React', 'Material UI', 'Node.js', 'Express', 'MongoDB', 'jQuery'],
         img:'src/assets/oceanThreads.png',
+        link:'https://github.com/hamadalhibshi/oceanThreads'
     },
     {
         id: '0',
@@ -144,6 +147,7 @@ export const projects = [
         description:'Two-player Jeopardy game, pits two players against each other in a battle of knowledge.',
         tech: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Git', 'GitHub'],
         img:'src/assets/jeopardy.png',
+        link:'https://github.com/hamadalhibshi/Jeopardy'
     },
 ]
 

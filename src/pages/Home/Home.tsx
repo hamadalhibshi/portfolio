@@ -79,7 +79,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="py-30 m-10 mb-30">
+      <div className="py-30 m-10 mb-50">
         <div className="lg:w-2/3">
           <p id="intro-text">{homeText.introduction}</p>
           <h1

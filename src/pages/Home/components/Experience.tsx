@@ -9,26 +9,6 @@ import "react-vertical-timeline-component/style.min.css";
 
 const Experience = () => {
   useEffect(() => {
-    gsap.utils.toArray("#dates").forEach((el: any) => {
-      gsap.fromTo(
-        el,
-        { opacity: 0, x: -120, skewX: -10, rotationY: -30 },
-        {
-          opacity: 1,
-          x: 0,
-          skewX: 0,
-          rotationY: 0,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: el,
-            start: "top 85%",
-            end: "top 40%",
-            scrub: true,
-            // markers: true,
-          },
-        }
-      );
-    });
     gsap.fromTo(
       "#title-text",
       { opacity: 0, y: -80, scale: 0.8, rotationX: 45, skewY: 5 },
@@ -43,7 +23,6 @@ const Experience = () => {
           trigger: "#title-text",
           start: "top 80%",
           end: "top 30%",
-          scrub: true,
           // markers: true,
         },
       }
