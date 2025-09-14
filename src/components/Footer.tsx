@@ -1,9 +1,35 @@
+import { useEffect } from "react";
 import { footer } from "../constants";
 import Button from "./Button";
+import { gsap } from "gsap";
 
 const Footer = () => {
+  useEffect(() => {
+    gsap.fromTo(
+      "#footer",
+      { opacity: 0, y: -80, scale: 0.8, rotationX: 45, skewY: 5 },
+      {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        rotationX: 0,
+        skewY: 0,
+        ease: "back.out(1.7)",
+        scrollTrigger: {
+          trigger: "#footer",
+          start: "top 80%",
+          end: "top 30%",
+          // markers: true,
+        },
+      }
+    );
+  }, []);
+
   return (
-    <div className="border-y border-neutral-800 pb-24 px-4 sm:px-6 md:px-8 lg:px-16">
+    <div
+      id="footer"
+      className="border-y border-neutral-800 pb-24 px-4 sm:px-6 md:px-8 lg:px-16"
+    >
       <h1 className="mt-20 text-2xl sm:text-2xl md:text-2xl text-center">
         {footer.title}
       </h1>
