@@ -28,16 +28,14 @@ const Cursor = () => {
       gsap.to(outer, { scale: 1, duration: 0.6, ease: "power3.out" });
     };
 
-    const handleMouseEnter = (e: Event) => {
-      const target = e.currentTarget as HTMLElement;
-      const bgColor = window.getComputedStyle(target).backgroundColor;
+    const handleMouseEnter = () => {
       gsap.to(outer, {
         scale: 0.7,
-        backgroundColor: bgColor,
-        borderColor: bgColor,
+        backgroundColor: "#fff",
+        borderColor: "#fff",
         duration: 0.3,
       });
-      gsap.to(inner, { scale: 0.7, backgroundColor: bgColor, duration: 0.3 });
+      gsap.to(inner, { scale: 0.7, backgroundColor: "#fff", duration: 0.3 });
     };
 
     const handleMouseLeave = () => {
