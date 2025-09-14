@@ -66,16 +66,16 @@ const Experience = () => {
                   ))}
                 </ul>
 
-                {/* <div className="mt-5">
+                <div className="mt-5 flex flex-wrap justify-start">
                   {exp?.tech.map((tech, index: number) => (
                     <span
                       key={index}
-                      className="rounded px-2 py-1 mr-2 text-sm font-medium text-purple-800"
+                      className="rounded px-2 py-1 sm:px-1 sm:py-0.5 mr-2 mb-2 text-sm font-medium text-purple-800 break-words"
                     >
                       {tech}
                     </span>
                   ))}
-                </div> */}
+                </div>
               </div>
             </div>
           </VerticalTimelineElement>

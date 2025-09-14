@@ -110,6 +110,7 @@ const Home = () => {
         {/* <TechCards /> */}
         <Projects />
       </div>
+
       <Footer />
     </>
   );
