@@ -66,7 +66,7 @@ const Experience = () => {
                   ))}
                 </ul>
 
-                <div className="mt-5">
+                {/* <div className="mt-5">
                   {exp?.tech.map((tech, index: number) => (
                     <span
                       key={index}
@@ -75,7 +75,7 @@ const Experience = () => {
                       {tech}
                     </span>
                   ))}
-                </div>
+                </div> */}
               </div>
             </div>
           </VerticalTimelineElement>

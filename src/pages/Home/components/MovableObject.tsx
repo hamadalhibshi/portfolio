@@ -16,7 +16,7 @@ const MovableObject = () => {
   return (
     <div
       id="object"
-      className="absolute w-[400px] h-[400px] lg:w-[700px] lg:h-[700px] lg:right-0 lg:top-[15%] top-[1%] z-[-10]"
+      className="absolute w-[380px] h-[380px] lg:w-[700px] lg:h-[700px] lg:right-0 lg:top-[15%] top-[3%] z-[-10]"
     >
       <Spline
         className="w-full h-full"
