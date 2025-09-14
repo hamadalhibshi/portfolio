@@ -25,6 +25,11 @@ const Footer = () => {
     );
   }, []);
 
+  const handleSendEmail = () => {
+    window.location.href =
+      "mailto:hamad.alhibshi@gmail.com?subject=Subject&body=Body%20goes%20here";
+  };
+
   return (
     <div
       id="footer"
@@ -40,7 +45,7 @@ const Footer = () => {
         <p className="my-4">{footer.description}</p>
       </div>
       <div className="flex py-10 justify-center">
-        <Button>
+        <Button onClick={handleSendEmail}>
           <span className="font-semibold text-sm sm:text-sm md:text-sm">
             {footer.buttonText}
           </span>
