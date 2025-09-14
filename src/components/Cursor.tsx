@@ -74,11 +74,11 @@ const Cursor = () => {
     <>
       <div
         id="cursor"
-        className="h-[30px] w-[30px] border border-white rounded-full fixed top-0 left-0 z-50 pointer-events-none flex justify-center items-center"
+        className="hidden h-[30px] w-[30px] border border-white rounded-full fixed top-0 left-0 z-50 pointer-events-none md:flex justify-center items-center"
       />
       <div
         id="inner-cursor"
-        className="h-[5px] w-[5px] bg-white rounded-full fixed top-0 left-0 z-50 pointer-events-none"
+        className="hidden md:block h-[5px] w-[5px] bg-white rounded-full fixed top-0 left-0 z-50 pointer-events-none"
       />
     </>
   );

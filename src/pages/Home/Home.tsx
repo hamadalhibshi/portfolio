@@ -105,7 +105,7 @@ const Home = () => {
         <MovableObject />
       </div>
 
-      <div className="lg:px-30 px-10">
+      <div className="lg:px-30 px-5">
         <Experience />
         {/* <TechCards /> */}
         <Projects />
