@@ -1,4 +1,10 @@
 import gaImg from '../assets/generalAssembly.jpeg'
+import malaeb from '../assets/malaeb.png'
+import tamC from '../assets/tamC.png'
+import spaceThreads from '../assets/spaceThreads.png'
+import yallaAthletes from '../assets/yallaAthletes.png'
+import oceanThreads from '../assets/oceanThreads.png'
+import jeopardy from '../assets/jeopardy.png'
 
 export const homeText = {
         introduction: "Hello, I'm",
@@ -44,7 +50,7 @@ export const experiences = [
         role:'Mobile Developer Trainee',
         company:'Malaeb',
         tech:['React Native', 'XCode', 'Android Studio'],
-        logo:'src/assets/malaeb.png',
+        logo: malaeb,
         description:[
             {
                 point:'Assisted in building and testing mobile app features under the guidance of senior developers.'
@@ -69,7 +75,7 @@ export const experiences = [
         role:'Frontend Developer',
         company:'Malaeb',
         tech:['React', 'React Native', 'XCode', 'Android Studio'],
-        logo:'src/assets/malaeb.png',
+        logo: malaeb,
         description:[
             {
                 point:'Led the development of new mobile and web features, ensuring timely delivery aligned with business goals.'
@@ -94,7 +100,7 @@ export const experiences = [
         role:'Full Stack Developer',
         company:'Tam-C Solutions',
         tech:['React', 'SQL', 'Postgres'],
-        logo:'src/assets/tamC.png',
+        logo: tamC,
         description:[
             {
                 point:'Led the development of new mobile and web features, ensuring timely delivery aligned with business goals.'
@@ -125,7 +131,7 @@ export const projects = [
         title: 'SpaceThreads',
         description:'A platform that serves as a collaborative storytelling platform. Users can visit various pages where authors have the creative freedom to craft their own stories. What sets SpaceThreads apart is its unique feature that allows authors to seamlessly merge their stories with those of others.',
         tech: ['Django', 'Python', 'JWT', 'PostGresQL', 'React', 'Material UI', 'pgAdmin4'],
-        img:'src/assets/spaceThreads.png',
+        img: spaceThreads,
         link:'https://github.com/hamadalhibshi/spaceThreads'
     },
     {
@@ -133,7 +139,7 @@ export const projects = [
         title: 'YallaAthletes',
         description:"This platform breaks down the barriers that often limit people's access to sports, making it possible for individuals from all walks of life to embrace their inner athlete and embark on a journey of physical excellence.",
         tech: ['Node.js', 'Express', 'MongoDB', 'bcrypt', 'React', 'Material UI'],
-        img:'src/assets/yallaAthletes.png',
+        img: yallaAthletes,
         link:'https://github.com/hamadalhibshi/yallaAthletes'
     },
     {
@@ -141,7 +147,7 @@ export const projects = [
         title: 'OceanThreads',
         description:'A space where students from General Assembly Middle East could connect, share their issues, ideas, or even showcase their projects. This setup allows others within the General Assembly Middle East community to jump in, leave comments, offer solutions, or simply spread some positivity.',
         tech: ['React', 'Material UI', 'Node.js', 'Express', 'MongoDB', 'jQuery'],
-        img:'src/assets/oceanThreads.png',
+        img: oceanThreads,
         link:'https://github.com/hamadalhibshi/oceanThreads'
     },
     {
@@ -149,7 +155,7 @@ export const projects = [
         title: 'Jeopardy',
         description:'Two-player Jeopardy game, pits two players against each other in a battle of knowledge.',
         tech: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Git', 'GitHub'],
-        img:'src/assets/jeopardy.png',
+        img: jeopardy,
         link:'https://github.com/hamadalhibshi/Jeopardy'
     },
 ]
