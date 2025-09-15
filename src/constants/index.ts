@@ -104,7 +104,7 @@ export const experiences = [
         date:'June 2023 - Sept 2023',
         role:'Software Engineer Bootcamp',
         company:'General Assembly',
-        tech:['React', 'Nodejs', 'mongoDB', 'Postgres', 'Javascript'],
+        tech:['HTML', 'CSS', 'React', 'Nodejs', 'mongoDB', 'Postgres', 'Express', 'SQL', 'Python', 'Javascript', 'jQuery'],
         logo: gaImg,
         description: [
             {
