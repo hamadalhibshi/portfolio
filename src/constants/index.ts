@@ -5,6 +5,11 @@ import spaceThreads from '../assets/spaceThreads.png'
 import yallaAthletes from '../assets/yallaAthletes.png'
 import oceanThreads from '../assets/oceanThreads.png'
 import jeopardy from '../assets/jeopardy.png'
+import html from '../assets/html.png'
+import javascript from '../assets/javascript.png'
+import typescript from '../assets/typescript.png'
+import react from '../assets/react.png'
+import tailwindcss from '../assets/tailwindcss.png'
 
 export const homeText = {
         introduction: "Hello, I'm",
@@ -177,26 +182,26 @@ export const techCardsConst = [
     {
         id: '0',
         title:'html',
-        image:'src/assets/html.png'
+        image: html
     },
     {
         id: '1',
         title:'javascript',
-        image:'src/assets/javascript.png'
+        image: javascript
     },
     {
         id: '2',
         title:'typescript',
-        image:'src/assets/typescript.png'
+        image: typescript
     },
     {
         id: '3',
         title:'react',
-        image:'src/assets/react.png'
+        image: react
     },
     {
         id: '4',
         title:'tailwindcss',
-        image:'src/assets/tailwindcss.png'
+        image: tailwindcss
     },
 ]
