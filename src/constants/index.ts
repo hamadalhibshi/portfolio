@@ -1,3 +1,5 @@
+import gaImg from '../assets/generalAssembly.jpeg'
+
 export const homeText = {
         introduction: "Hello, I'm",
         name: 'Hamad Alhibshi',
@@ -20,7 +22,7 @@ export const experiences = [
         role:'Software Engineer Bootcamp',
         company:'General Assembly',
         tech:['React', 'Nodejs', 'mongoDB', 'Postgres'],
-        logo:'src/assets/generalAssembly.jpeg',
+        logo: gaImg,
         description:[
             {
                 point:'Led the development of new mobile and web features, ensuring timely delivery aligned with business goals.'
