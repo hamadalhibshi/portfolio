@@ -3,27 +3,10 @@ import { projects, titles } from "../../../constants";
 import { gsap } from "gsap";
 import { FaGithub } from "react-icons/fa";
 import { Tilt } from "react-tilt";
+import { Title } from "../../../components";
 
 const Projects = () => {
   useEffect(() => {
-    gsap.fromTo(
-      "#title",
-      { opacity: 0, y: -80, scale: 0.8, rotationX: 45, skewY: 5 },
-      {
-        opacity: 1,
-        y: 0,
-        scale: 1,
-        rotationX: 0,
-        skewY: 0,
-        ease: "back.out(1.7)",
-        scrollTrigger: {
-          trigger: "#title",
-          start: "top 80%",
-          end: "top 30%",
-          // markers: true,
-        },
-      }
-    );
     gsap.fromTo(
       "#project-card",
       { opacity: 0, y: -80, scale: 0.8, rotationX: 45, skewY: 5 },
@@ -51,9 +34,7 @@ const Projects = () => {
 
   return (
     <div className="pb-24">
-      <h1 id="title" className="my-20 text-4xl text-center">
-        {titles.projects}
-      </h1>
+      <Title text={titles.projects} center />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {projects.map((project: any, index: number) => (

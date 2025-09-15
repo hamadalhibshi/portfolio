@@ -1,39 +1,15 @@
-import { useEffect } from "react";
 import { experiences, titles } from "../../../constants";
-import { gsap } from "gsap";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import { Title } from "../../../components";
 
 const Experience = () => {
-  useEffect(() => {
-    gsap.fromTo(
-      "#title-text",
-      { opacity: 0, y: -80, scale: 0.8, rotationX: 45, skewY: 5 },
-      {
-        opacity: 1,
-        y: 0,
-        scale: 1,
-        rotationX: 0,
-        skewY: 0,
-        ease: "back.out(1.7)",
-        scrollTrigger: {
-          trigger: "#title-text",
-          start: "top 80%",
-          end: "top 30%",
-          // markers: true,
-        },
-      }
-    );
-  }, []);
-
   return (
     <div className="pb-24">
-      <h1 id="title-text" className="my-20 text-4xl text-center">
-        {titles.experience}
-      </h1>
+      <Title text={titles.experience} center />
 
       <VerticalTimeline>
         {experiences.map((exp, index: number) => (

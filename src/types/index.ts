@@ -4,3 +4,9 @@ export interface ButtonProps {
     children?: any;
     onClick?: () => void;
 }
+
+export interface TitleProps {
+    text: string;
+    right?:boolean;
+    center?: boolean
+}

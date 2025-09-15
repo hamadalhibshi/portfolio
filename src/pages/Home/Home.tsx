@@ -96,7 +96,7 @@ const Home = () => {
           </h1>
           <p
             id="about-text"
-            className="lg:w-3/4 mt-5 leading-relaxed text-justify text-2xl"
+            className="lg:w-3/4 mt-5 leading-relaxed text-justify text-[20px] md:text-2xl"
           >
             {homeText.about}
           </p>

@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { techCardsConst, titles } from "../../../constants";
 import { gsap } from "gsap";
+import { Title } from "../../../components";
 
 const TechCards = () => {
   const cardsRef = useRef<HTMLDivElement[]>([]);
@@ -42,10 +43,8 @@ const TechCards = () => {
   }, []);
 
   return (
-    <div className="py-24">
-      <h1 id="title" className="mb-20 text-4xl text-center">
-        {titles.technologies}
-      </h1>
+    <div className="pb-24">
+      <Title text={titles.technologies} center />
 
       <div className="flex flex-wrap justify-center gap-5">
         {techCardsConst.map((tech, index) => (
@@ -56,7 +55,7 @@ const TechCards = () => {
             className="h-[100px] w-[100px] 
                  md:h-[120px] md:w-[120px] 
                  lg:h-[140px] lg:w-[140px]
-                 rounded-2xl flex justify-center items-center border"
+                 rounded-2xl flex justify-center items-center border border-neutral-800"
           >
             <div
               className="h-[50%] w-[50%] 
@@ -65,7 +64,7 @@ const TechCards = () => {
               <img
                 src={tech.image}
                 alt={tech.title}
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain rounded-sm"
               />
             </div>
           </div>
