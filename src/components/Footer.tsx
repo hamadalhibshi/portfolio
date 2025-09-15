@@ -33,7 +33,7 @@ const Footer = () => {
   return (
     <div
       id="footer"
-      className="border-y border-neutral-800 pb-24 px-4 sm:px-6 md:px-8 lg:px-16"
+      className="border-t border-neutral-800 pb-24 px-4 sm:px-6 md:px-8 lg:px-16"
     >
       <h1 className="mt-20 text-2xl sm:text-2xl md:text-2xl text-center">
         {footer.title}

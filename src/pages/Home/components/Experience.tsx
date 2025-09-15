@@ -52,7 +52,7 @@ const Experience = () => {
               </div>
             }
           >
-            <div className="flex mb-8 flex-wrap justify-center">
+            <div className="flex flex-wrap justify-center">
               <div className="w-full max-w-xl">
                 <h6 className="font-semibold">{exp?.role}</h6>
                 <span className="font-semibold text-sm text-neutral-500 block">
