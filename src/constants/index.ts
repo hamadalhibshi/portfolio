@@ -27,30 +27,55 @@ export const titles = {
 };
 
 export const experiences = [
-    {
+        {
         id: '0',
-        date:'June 2023 - Sept 2023',
-        role:'Software Engineer Bootcamp',
-        company:'General Assembly',
-        tech:['React', 'Nodejs', 'mongoDB', 'Postgres'],
-        logo: gaImg,
+        date:'Feb 2025 - May 2025',
+        role:'Full Stack Developer',
+        company:'Tam-C Solutions',
+        tech:['React', 'SQL', 'Postgres'],
+        logo: tamC,
+        description: [
+            {
+                point: 'Developed and optimized frontend features using React, improving usability and ensuring seamless user interactions across web platforms.',
+            },
+            {
+                point: 'Customized ESRI maps within the application, enabling dynamic data visualization and interactive geospatial features.',
+            },
+            {
+                point: 'Identified and resolved frontend performance bottlenecks, reducing load times and enhancing rendering efficiency for large data sets.',
+            },
+            {
+                point: 'Debugged and fixed critical UI and logic issues, ensuring smoother user experiences and improving overall product stability.',
+            },
+        ]
+    },
+        {
+        id: '1',
+        date:'May 2024 - Feb 2025',
+        role:'Frontend Developer',
+        company:'Malaeb',
+        tech:['React', 'React Native', 'XCode', 'Android Studio'],
+        logo: malaeb,
         description:[
             {
                 point:'Led the development of new mobile and web features, ensuring timely delivery aligned with business goals.'
             },
             {
-                point:'Led the development of new mobile and web features, ensuring timely delivery aligned with business goals.'
+                point:'Collaborated with UI/UX, QA, and cross-functional teams to refine user flows and implement seamless user experiences.'
             },
             {
-                point:'Led the development of new mobile and web features, ensuring timely delivery aligned with business goals.'
+                point:'Optimized performance, debugging, and monitoring through tools like Flipper and Reactotron, improving app reliability.'
             },
             {
-                point:'Led the development of new mobile and web features, ensuring timely delivery aligned with business goals.'
+                point:'Contributed to deployment processes.'
+            },
+            {
+                point:'Actively participated in sprint planning, task management, and provided input on technical design decisions.'
             },
         ]
     },
-    {
-        id: '1',
+        {
+        id: '2',
         date:'Nov 2023 - May 2024',
         role:'Mobile Developer Trainee',
         company:'Malaeb',
@@ -75,49 +100,24 @@ export const experiences = [
         ]
     },
     {
-        id: '2',
-        date:'May 2024 - Feb 2025',
-        role:'Frontend Developer',
-        company:'Malaeb',
-        tech:['React', 'React Native', 'XCode', 'Android Studio'],
-        logo: malaeb,
-        description:[
-            {
-                point:'Led the development of new mobile and web features, ensuring timely delivery aligned with business goals.'
-            },
-            {
-                point:'Collaborated with UI/UX, QA, and cross-functional teams to refine user flows and implement seamless user experiences.'
-            },
-            {
-                point:'Optimized performance, debugging, and monitoring through tools like Flipper and Reactotron, improving app reliability.'
-            },
-            {
-                point:'Contributed to deployment processes.'
-            },
-            {
-                point:'Actively participated in sprint planning, task management, and provided input on technical design decisions.'
-            },
-        ]
-    },
-    {
         id: '3',
-        date:'Feb 2025 - May 2025',
-        role:'Full Stack Developer',
-        company:'Tam-C Solutions',
-        tech:['React', 'SQL', 'Postgres'],
-        logo: tamC,
-        description:[
+        date:'June 2023 - Sept 2023',
+        role:'Software Engineer Bootcamp',
+        company:'General Assembly',
+        tech:['React', 'Nodejs', 'mongoDB', 'Postgres', 'Javascript'],
+        logo: gaImg,
+        description: [
             {
-                point:'Led the development of new mobile and web features, ensuring timely delivery aligned with business goals.'
+                point: 'Completed an intensive software engineering bootcamp, gaining hands-on experience with modern web development tools and best practices.',
             },
             {
-                point:'Led the development of new mobile and web features, ensuring timely delivery aligned with business goals.'
+                point: 'Built full-stack projects, strengthening understanding of both frontend and backend development.',
             },
             {
-                point:'Led the development of new mobile and web features, ensuring timely delivery aligned with business goals.'
+                point: 'Collaborated with peers in team-based projects, practicing agile workflows, code reviews, and version control with Git/GitHub.',
             },
             {
-                point:'Led the development of new mobile and web features, ensuring timely delivery aligned with business goals.'
+                point: 'Developed problem-solving skills by debugging applications, optimizing performance, and applying fundamental computer science concepts.',
             },
         ]
     },
