@@ -79,7 +79,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="py-30 m-10 sm:mb-20 md:mb-50">
+      <div className="py-30 md:m-10 m-5 sm:mb-20 md:mb-50">
         <div className="lg:w-2/3 z-10">
           <p id="intro-text">{homeText.introduction}</p>
           <h1
@@ -96,7 +96,7 @@ const Home = () => {
           </h1>
           <p
             id="about-text"
-            className="lg:w-3/4 mt-5 leading-relaxed text-justify text-[20px] md:text-2xl"
+            className="lg:w-3/4 mt-5 leading-relaxed text-justify text-[19px] md:text-2xl"
           >
             {homeText.about}
           </p>

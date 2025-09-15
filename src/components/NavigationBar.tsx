@@ -14,7 +14,7 @@ const NavigationBar = () => {
   };
 
   return (
-    <div className="top-0 w-full p-5 pt-10">
+    <div className="top-0 w-full md:px-5 pt-10">
       <div className="flex items-center justify-between mx-5">
         <div className="text-[15px] lg:text-2xl uppercase">
           <a href="/">Hamad Alhibshi</a>
