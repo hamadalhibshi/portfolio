@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { footer } from "../constants";
+import { email, footer } from "../constants";
 import Button from "./Button";
 import { gsap } from "gsap";
 
@@ -26,8 +26,7 @@ const Footer = () => {
   }, []);
 
   const handleSendEmail = () => {
-    window.location.href =
-      "mailto:hamad.alhibshi@gmail.com?subject=Subject&body=Body%20goes%20here";
+    window.location.href = `mailto:hamad.alhibshi@gmail.com?${email.subject}&${email.body}`;
   };
 
   return (
