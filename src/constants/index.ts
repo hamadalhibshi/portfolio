@@ -207,6 +207,6 @@ export const techCardsConst = [
 ]
 
 export const email = {
-    body:'body=Hello%20Hamad,%0D%0A%0D%0AI%20would%20like%20to%20discuss%20a%20potential%20web%20development%opportunity%20with%20you.%20Please%20let%20me%20know%20your%20availability.%0D%0A%0D%0AThanks!',
+    body:'body=Hello%20Hamad,%0D%0A%0D%0AI%20would%20like%20to%20discuss%20a%20potential%20web%20development%20opportunity%20with%20you.%20Please%20let%20me%20know%20your%20availability.%0D%0A%0D%0AThanks!',
     subject:'subject=Web%20Development%20Opportunity'
 }
