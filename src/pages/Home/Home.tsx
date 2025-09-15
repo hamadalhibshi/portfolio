@@ -107,7 +107,7 @@ const Home = () => {
 
       <div className="lg:px-30 px-5">
         <Experience />
-        {/* <TechCards /> */}
+        <TechCards />
         <Projects />
       </div>
 

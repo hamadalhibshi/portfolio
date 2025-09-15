@@ -10,6 +10,7 @@ export const homeText = {
 export const titles = {
     experience: 'Experience',
     projects: 'Projects',
+    technologies: 'Technologies',
 };
 
 export const experiences = [
@@ -167,17 +168,27 @@ export const scrambleTextRoles = [
 export const techCardsConst = [
     {
         id: '0',
-        title:'React Native Developer',
-        image:'src/assets/react.png'
+        title:'Full-Stack Developer',
+        image:'src/assets/html.png'
     },
     {
         id: '1',
         title:'Front-End Developer',
-        image:'src/assets/react.png'
+        image:'src/assets/javascript.png'
     },
     {
         id: '2',
         title:'Full-Stack Developer',
+        image:'src/assets/typescript.png'
+    },
+    {
+        id: '3',
+        title:'React Native Developer',
         image:'src/assets/react.png'
-    }
+    },
+    {
+        id: '4',
+        title:'Full-Stack Developer',
+        image:'src/assets/tailwindcss.png'
+    },
 ]
