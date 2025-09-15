@@ -80,17 +80,17 @@ const Home = () => {
   return (
     <>
       <div className="py-30 m-10 sm:mb-20 md:mb-50">
-        <div className="lg:w-2/3">
+        <div className="lg:w-2/3 z-10">
           <p id="intro-text">{homeText.introduction}</p>
           <h1
             id="name-text"
-            className="uppercase lg:text-5xl text-3xl lg:mt-5 font-bold text-neutral-50"
+            className="uppercase lg:text-5xl text-2xl lg:mt-5 font-bold text-neutral-50"
           >
             {homeText.name}
           </h1>
           <h1
             id="actual-role-text"
-            className="lg:text-5xl text-3xl bg-gradient-to-r from-pink-300 to-purple-500 lg:py-5 via-slate-500 text-transparent bg-clip-text"
+            className="lg:text-5xl text-2xl bg-gradient-to-r from-pink-300 to-purple-500 lg:py-5 via-slate-500 text-transparent bg-clip-text"
           >
             {homeText.role}
           </h1>
