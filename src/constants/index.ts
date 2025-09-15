@@ -168,27 +168,27 @@ export const scrambleTextRoles = [
 export const techCardsConst = [
     {
         id: '0',
-        title:'Full-Stack Developer',
+        title:'html',
         image:'src/assets/html.png'
     },
     {
         id: '1',
-        title:'Front-End Developer',
+        title:'javascript',
         image:'src/assets/javascript.png'
     },
     {
         id: '2',
-        title:'Full-Stack Developer',
+        title:'typescript',
         image:'src/assets/typescript.png'
     },
     {
         id: '3',
-        title:'React Native Developer',
+        title:'react',
         image:'src/assets/react.png'
     },
     {
         id: '4',
-        title:'Full-Stack Developer',
+        title:'tailwindcss',
         image:'src/assets/tailwindcss.png'
     },
 ]

@@ -47,7 +47,7 @@ const TechCards = () => {
         {titles.technologies}
       </h1>
 
-      <div className="flex flex-wrap justify-center gap-10">
+      <div className="flex flex-wrap justify-center gap-5">
         {techCardsConst.map((tech, index) => (
           <div
             key={index}
@@ -64,7 +64,7 @@ const TechCards = () => {
             >
               <img
                 src={tech.image}
-                alt={"Tech Logo"}
+                alt={tech.title}
                 className="w-full h-full object-contain"
               />
             </div>
