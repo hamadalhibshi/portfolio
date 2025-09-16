@@ -6,11 +6,13 @@ import yallaAthletes from '../assets/yallaAthletes.png'
 import oceanThreads from '../assets/oceanThreads.png'
 import jeopardy from '../assets/jeopardy.png'
 import html from '../assets/html.png'
+import css from '../assets/css.png'
 import javascript from '../assets/javascript.png'
 import typescript from '../assets/typescript.png'
 import react from '../assets/react.png'
 import tailwindcss from '../assets/tailwindcss.png'
 import webLogo from '../../public/logo.png'
+import profile from '../assets/profile.png'
 
 export const homeText = {
         introduction: "Hello, I'm",
@@ -25,6 +27,7 @@ export const titles = {
     experience: 'Experience',
     projects: 'Projects',
     technologies: 'Technologies',
+    about: 'About Me',
 };
 
 export const experiences = [
@@ -187,21 +190,26 @@ export const techCardsConst = [
     },
     {
         id: '1',
+        title:'css',
+        image: css
+    },
+    {
+        id: '2',
         title:'javascript',
         image: javascript
     },
     {
-        id: '2',
+        id: '3',
         title:'typescript',
         image: typescript
     },
     {
-        id: '3',
+        id: '4',
         title:'react',
         image: react
     },
     {
-        id: '4',
+        id: '5',
         title:'tailwindcss',
         image: tailwindcss
     },
@@ -212,4 +220,26 @@ export const email = {
     subject:'subject=Web%20Development%20Opportunity'
 }
 
-export const logo = webLogo;
+export const images = {
+  logo: webLogo,
+  profile: profile,
+};
+
+export const aboutDescriptions = [
+    "I'm an enthusiastic frontend developer who enjoys building elegant and functional digital experiences. What began as curiosity for web development has grown into a strong commitment to creating impactful solutions.",
+    "Outside of coding, I like to dive into new technologies, contribute to open-source projects, and stay updated on the latest trends in web development. I value continuous learning and enjoy challenging the limits of what's possible online.",
+    "I strive to connect design and development, delivering user experiences that are not only visually appealing but also intuitive and efficient."
+]
+
+export const aboutBoxes = [
+    {
+        id: '0',
+        title: 'Years Experience',
+        number: '2+',
+    },
+    {
+        id: '1',
+        title: 'Projects',
+        number: '4',
+    },
+]

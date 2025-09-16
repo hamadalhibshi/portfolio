@@ -1,9 +1,32 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import type { ButtonProps } from "../types";
 
-const Button = ({ href, children, onClick }: ButtonProps) => {
+const Button = ({ href, children, onClick, className }: ButtonProps) => {
   const bgRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef(null);
+
+  useEffect(() => {
+    if (!buttonRef.current) return;
+
+    gsap.fromTo(
+      buttonRef.current,
+      { opacity: 0, scale: 0.8, rotationX: 45 },
+      {
+        opacity: 1,
+        scale: 1,
+        rotationX: 0,
+        ease: "back.out(1.7)",
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: buttonRef.current,
+          start: "top 80%",
+          end: "top 30%",
+          // markers: true,
+        },
+      }
+    );
+  }, []);
 
   const handleMouseEnter = () => {
     if (bgRef.current) {
@@ -38,9 +61,10 @@ const Button = ({ href, children, onClick }: ButtonProps) => {
     return (
       <button
         onClick={onClick}
-        className="relative px-8 py-5 rounded-lg overflow-hidden text-white font-semibold border border-purple-800 cursor-none"
+        className={`relative px-8 py-5 rounded-lg overflow-hidden text-white font-semibold border border-purple-800 cursor-none ${className}`}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
+        ref={buttonRef}
       >
         <div
           ref={bgRef}

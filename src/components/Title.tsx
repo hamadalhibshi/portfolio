@@ -29,7 +29,7 @@ const Title = ({ text, right, center }: TitleProps) => {
   }, []);
 
   return (
-    <div className="mb-20" id="title" ref={titleRef}>
+    <div className="mb-10 md:mb-20" id="title" ref={titleRef}>
       <h1
         className={`mb-3 text-2xl md:text-4xl font-semibold ${
           right ? "text-right" : ""

@@ -1,6 +1,6 @@
 import { TiSocialLinkedin } from "react-icons/ti";
 import { LuGithub } from "react-icons/lu";
-import { logo } from "../constants";
+import { images } from "../constants";
 
 const NavigationBar = () => {
   const iconClass =
@@ -26,7 +26,7 @@ const NavigationBar = () => {
         md:w-[70px] md:h-[70px]"
           onClick={reload}
         >
-          <img src={logo} alt="logo" className="w-full h-full" />
+          <img src={images.logo} alt="logo" className="w-full h-full" />
         </button>
 
         <div>

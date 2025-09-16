@@ -1,7 +1,13 @@
 import { useEffect } from "react";
 import { Footer } from "../../components";
 import { homeText, scrambleTextRoles } from "../../constants";
-import { Experience, MovableObject, Projects, TechCards } from "./components";
+import {
+  About,
+  Experience,
+  MovableObject,
+  Projects,
+  TechCards,
+} from "./components";
 import { gsap } from "gsap";
 import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -79,7 +85,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="py-30 md:m-10 m-5 sm:mb-20 md:mb-50">
+      <div className="py-30 md:m-10 m-5 mb-20 md:mb-50">
         <div className="lg:w-2/3 z-10">
           <p id="intro-text">{homeText.introduction}</p>
           <h1
@@ -106,6 +112,7 @@ const Home = () => {
       </div>
 
       <div className="lg:px-30 px-5">
+        <About />
         <Experience />
         <TechCards />
         <Projects />
