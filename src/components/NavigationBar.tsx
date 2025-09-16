@@ -1,5 +1,6 @@
 import { TiSocialLinkedin } from "react-icons/ti";
 import { LuGithub } from "react-icons/lu";
+import { logo } from "../constants";
 
 const NavigationBar = () => {
   const iconClass =
@@ -13,12 +14,20 @@ const NavigationBar = () => {
     window.open("https://www.linkedin.com/in/halhibshi/", "_blank");
   };
 
+  const reload = () => {
+    window.location.href = "/";
+  };
+
   return (
     <div className="top-0 w-full md:px-5 pt-10">
       <div className="flex items-center justify-between mx-5">
-        <div className="text-[15px] lg:text-2xl uppercase">
-          <a href="/">Hamad Alhibshi</a>
-        </div>
+        <button
+          className="text-[15px] lg:text-2xl uppercase w-[40px] h-[40px] hover:opacity-50 cursor-none
+        md:w-[70px] md:h-[70px]"
+          onClick={reload}
+        >
+          <img src={logo} alt="logo" className="w-full h-full" />
+        </button>
 
         <div>
           <button onClick={openGithubUrl}>

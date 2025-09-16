@@ -10,6 +10,7 @@ import javascript from '../assets/javascript.png'
 import typescript from '../assets/typescript.png'
 import react from '../assets/react.png'
 import tailwindcss from '../assets/tailwindcss.png'
+import webLogo from '../../public/logo.png'
 
 export const homeText = {
         introduction: "Hello, I'm",
@@ -210,3 +211,5 @@ export const email = {
     body:'body=Hello%20Hamad,%0D%0A%0D%0AI%20would%20like%20to%20discuss%20a%20potential%20web%20development%20opportunity%20with%20you.%20Please%20let%20me%20know%20your%20availability.%0D%0A%0D%0AThanks!',
     subject:'subject=Web%20Development%20Opportunity'
 }
+
+export const logo = webLogo;
