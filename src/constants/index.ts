@@ -228,7 +228,7 @@ export const images = {
 
 export const aboutDescriptions = [
     "I'm an enthusiastic frontend developer who enjoys building elegant and functional digital experiences. What began as curiosity for web development has grown into a strong commitment to creating impactful solutions.",
-    "Outside of coding, I like to dive into new technologies, contribute to open-source projects, and stay updated on the latest trends in web development. I value continuous learning and enjoy challenging the limits of what's possible online.",
+    "Outside of coding, I like to dive into new technologies, and stay updated on the latest trends in web development. I value continuous learning and enjoy challenging the limits of what's possible online.",
     "I strive to connect design and development, delivering user experiences that are not only visually appealing but also intuitive and efficient."
 ]
 
