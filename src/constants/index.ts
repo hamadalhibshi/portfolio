@@ -248,3 +248,10 @@ export const aboutBoxes = [
 export const documents = {
     resume: resume
 }
+
+export const notFoundStrings = {
+    error: '404',
+    message: 'Oops! Page not found',
+    description: 'The page you are looking for does not exist or has been moved.',
+    homeButton: 'Go Back Home',
+}

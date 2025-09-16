@@ -15,7 +15,7 @@ const App = () => {
         <Routes>
           <Route index element={<Home />} />
           <Route path="*" element={<NotFound />} />
-          <Route path="/pdf" element={<PdfViewer />} />
+          <Route path="/resume" element={<PdfViewer />} />
         </Routes>
       </BrowserRouter>
     </>
