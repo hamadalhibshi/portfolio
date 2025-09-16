@@ -48,10 +48,7 @@ const About = () => {
   }, []);
 
   const handleDownloadCv = () => {
-    window.open(
-      "https://docs.google.com/document/d/1omk7rQeh9BmvpnFFQpTocpPQl-Das0x_/export?format=pdf&ouid=105909076522157103100&rtpof=true&sd=true",
-      "_blank"
-    );
+    window.open("https://hamadalhibshi.netlify.app/pdf", "_blank");
   };
 
   return (

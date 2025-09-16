@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Footer } from "../../components";
+import { Footer, NavigationBar } from "../../components";
 import { homeText, scrambleTextRoles } from "../../constants";
 import {
   About,
@@ -85,6 +85,7 @@ const Home = () => {
 
   return (
     <>
+      <NavigationBar />
       <div className="py-30 md:m-10 m-5 mb-20 md:mb-50">
         <div className="lg:w-2/3 z-10">
           <p id="intro-text">{homeText.introduction}</p>

@@ -1,2 +1,3 @@
 export {default as NotFound} from './NotFound'
 export {default as Home} from './Home/Home'
+export {default as PdfViewer} from './PdfViewer'
