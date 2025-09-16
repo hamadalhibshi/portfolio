@@ -4,11 +4,12 @@ import {
   RPPages,
   RPConfig,
 } from "@pdf-viewer/react";
+import { documents } from "../constants";
 
 const PdfViewer = () => {
   return (
     <RPConfig>
-      <RPProvider src="src/assets/Hamad_Alhibshi_CV.pdf">
+      <RPProvider src={documents.resume}>
         <RPDefaultLayout style={{ height: "900px" }}>
           <RPPages />
         </RPDefaultLayout>

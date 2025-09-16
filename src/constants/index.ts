@@ -13,6 +13,7 @@ import react from '../assets/react.png'
 import tailwindcss from '../assets/tailwindcss.png'
 import webLogo from '../../public/logo.png'
 import profile from '../assets/profile.png'
+import resume from '../assets/Hamad_Alhibshi_CV.pdf'
 
 export const homeText = {
         introduction: "Hello, I'm",
@@ -243,3 +244,7 @@ export const aboutBoxes = [
         number: '4',
     },
 ]
+
+export const documents = {
+    resume: resume
+}
