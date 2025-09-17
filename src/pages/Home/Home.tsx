@@ -11,9 +11,7 @@ const Home = () => {
   return (
     <>
       <NavigationBar />
-
       <Hero />
-
       <div className="md:px-30 px-5">
         <About />
         <Experience />

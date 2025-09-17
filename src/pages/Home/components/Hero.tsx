@@ -105,7 +105,7 @@ const Hero = () => {
           {homeText.role}
         </h1>
         <div
-          className="w-2/5 border-2 rounded-2xl border-purple-900 mt-2
+          className="w-2/5 border-2 rounded-2xl border-purple-900 mt-5
           md:my-5 md:w-1/5 md:border-4"
         />
       </div>
