@@ -12,8 +12,6 @@
   "dependencies": {
     "@gsap/react": "^2.1.2",
     "@pdf-viewer/react": "^1.8.4",
-    "@splinetool/react-spline": "^4.1.0",
-    "@splinetool/runtime": "^1.10.57",
     "@tailwindcss/vite": "^4.1.12",
     "gsap": "^3.13.0",
     "prop-types": "^15.8.1",
