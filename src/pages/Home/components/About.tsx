@@ -48,7 +48,7 @@ const About = () => {
   }, []);
 
   const handleDownloadCv = () => {
-    window.open("https://hamadalhibshi.netlify.app/resume", "_blank");
+    window.open("/resume", "_blank");
   };
 
   return (
