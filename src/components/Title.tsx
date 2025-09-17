@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import type { TitleProps } from "../types";
 import { gsap } from "gsap";
 
-const Title = ({ text, right, center }: TitleProps) => {
+const Title = ({ text, right, center, id }: TitleProps) => {
   const titleRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const Title = ({ text, right, center }: TitleProps) => {
   }, []);
 
   return (
-    <div className="mb-10 md:mb-20" id="title" ref={titleRef}>
+    <div className="mb-10 md:mb-20" id={`${id ? id : "title"}`} ref={titleRef}>
       <h1
         className={`mb-3 text-2xl md:text-4xl font-semibold ${
           right ? "text-right" : ""

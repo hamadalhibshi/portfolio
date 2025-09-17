@@ -8,5 +8,6 @@ export interface ButtonProps {
 export interface TitleProps {
     text: string;
     right?:boolean;
-    center?: boolean
+    center?: boolean;
+    id?: string;
 }
